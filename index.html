@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 3 .. practice bootstrap</title>
+    <link rel="stylesheet" href="./bootstrap css/style.css">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+      /* Basic Reset */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+      }
+      
+      @media (min-width: 768px) {
+        .media{
+             background: none !important;
+         }
+         .media:hover{
+        color: orangered in !important;
+     }
+     }
+     .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(74 62 61 / 93%);
+    }
+      /* Body Styling */
+      .form-sec{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: auto;
+          background-color: #f0f0f0;
+      }
+      
+      /* Form Container */
+      .form-container {
+          width: auto;
+          max-width: 400px;
+          padding: 20px;
+          background-color:transparent;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Form Styling */
+      h2 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 20px;
+      }
+      
+      label {
+          color: #555;
+          margin: 10px 0 5px;
+          display: block;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+      
+      /* Submit Button */
+      .btn-submit {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          background-color: #4CAF50;
+          color: white;
+          font-size: 16px;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+      
+      .btn-submit:hover {
+          background-color: #45a049;
+      }
+  </style>
+
+</head>
+<body>
+
+  <!-- navbar starts here -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top justify-content-md-center justify-content-center bg-primary navbar-dark px-5">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand me-auto  justify-content-start justify-content-md-between" >
+                <img src="./image/profile-pic.png" style="width: 50px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto justify-content-center align-items-center">
+                    <li class="nav-item w-50 p-1 m-1 bg-info media  text-dark fw-bold "><a class="nav-link text-center" href="#">Home</a></li>
+                    <li class="nav-item w-50 p-1 m-1 bg-info media  text-dark fw-bold"><a class="nav-link text-center" href="#">About</a></li>
+                    <li class="nav-item w-50 p-1 m-1 bg-info media  text-dark fw-bold"><a class="nav-link text-center" href="#">Myself</a></li>
+                    <li class="nav-item w-50 p-1 m-1 bg-info media  text-dark fw-bold"><a class="nav-link text-center" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+  <!-- navbar ends here -->
+
+  <br><br>
+
+    <div class="alert alert-danger alert-dismissible mt-5" role="alert">
+        <button
+          class="btn-close "
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, fuga!
+      </div>
+
+      <!-- collapse example -->
+<!-- <a href="#demo" data-bs-toggle="collapse">learn more</a>
+<button
+  class="btn btn-primary"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#demo"
+  aria-expanded="false"
+  aria-controls="demo"
+>
+  learn more
+</button>
+<div class="collapse" id="demo">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolorem sed
+    quisquam repudiandae sequi voluptatibus, aperiam aliquam adipisci nam
+    maiores quia unde necessitatibus veritatis eligendi in laboriosam, officia
+    porro? Explicabo.
+    <hr>
+  </p>
+</div> -->
+
+<!-- pagination example -->
+<!-- <footer>
+  <ul class="pagination py-3 justify-content-center">
+    <li class="page-item"><a class="page-link" href="https://www.facebook.com/">day 2</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  </ul>
+</footer> -->
+
+<!-- 
+<div class="f-col">
+    <a href="#azim" data-bs-toggle="collapse">see more</a>
+    <div class="collapse" id="azim">
+        <p>azim uddin Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quod, ex blanditiis nulla asperiores magnam consectetur rem eveniet praesentium voluptatum!</p>
+    </div>
+</div> -->
+
+<h1 class="text-center ">
+  My Education
+</h1>
+<table class="table table-bordered table-hover text-center table-striped ">
+  <thead style="background-color: darkseagreen">
+    <tr>
+      <th scope="col">Qualification</th>
+      <th scope="col">Institution</th>
+      <th scope="col">Passing Year</th>
+      <th scope="col">Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <th scope="row">SSC</th>
+      <td>SingerKatch High School and College</td>
+      <td>2006</td>
+      <td rowspan="2">3.44 / 5.00</td>
+    </tr>
+    <tr class="table-secondary">
+      <th scope="row">HSC</td>
+      <td>SingerKatch High School and College</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <th scope="row">BSc in CSE</td>
+      <td>Leading University</td>
+      <td>2017</td>
+      <td>3.92 / 4.00</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- table start here -->
+<div class="container">
+  <h1 class=" text-center text-capitalize bg-secondary text-white-50">this is a table</h1>
+  <table class="table table-bordered text-center  table-striped table-hover">
+    <thead>
+      <tr class="fw-bold">
+        <th scope="col">name</th>
+        <th scope="col">roll</th>
+        <th scope="col">class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>azim</td>
+        <td>99</td>
+        <td>4th semester</td>
+      </tr>
+      <tr>
+        <td>akib</td>
+        <td rowspan="2" class="align-self-center">01</td>
+        <td>1st</td>
+      </tr>
+      <tr>
+        <td>nurul</td>
+        <td>one</td>
+      </tr>
+    </tbody>
+  </table>
+   <br> <br>
+</div>
+<!-- table end here -->
+
+<div class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">asdf</button>
+      </div>
+      <div class="modal-body">
+        <!-- <p>Modal body text goes here.</p> -->
+        <!-- chat gpt theke copy form -->
+        asasas
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Click for Sign IN
+</button>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <!-- <p>please  select a degree to view details.. and try again..</p> -->
+          <!-- <label for="azim">user name :</label>
+          <input type="text" name="name" id="name"> -->
+          <div class="form-sec">
+            <div class="form-container">
+              <h2>Sign Up</h2>
+              <form>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+            
+                  <button type="submit" class="btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- form -->
+
+</body>
+</html>
